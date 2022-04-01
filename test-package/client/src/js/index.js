@@ -1,4 +1,4 @@
-import "./index.css";
+import "../index.css";
 import * as rust_wasm from "rust-wasm";
 
 console.log("Hello world!");
