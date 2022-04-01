@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "basic-rust": "file:../basic-rust/pkg",
+    "basic-rust-wasm": "file:../basic-rust-wasm/pkg",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, "./src/index.js"),
+    main: path.resolve(__dirname, "src", "bootstrap.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -11,18 +11,21 @@ module.exports = {
     clean: true,
   },
   mode: "development",
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "My first generated html!",
-      template: "./src/index.html",
-    }),
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      }
-    ]
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     title: "My first generated html!",
+  //     template: "./src/index.html",
+  //   }),
+  // ],
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.css$/i,
+  //       use: ['style-loader', 'css-loader'],
+  //     }
+  //   ]
+  // },
+  experiments: {
+    asyncWebAssembly: true,
   }
 }
