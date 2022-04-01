@@ -13,12 +13,6 @@
   var foo = require('./js/foo')
   var bar = require('./js/bar')
   var foobar = require('./js/foobar')
-
-  // Doesn't work out like this, `require` is a synchronous request
-  //   - So if file that we require hasn't been loaded in some way we need to HTTP request
-  //   - But that is asynchronous 
-  // Solution:
-  //   - put all dependencies in one file to have all code in memory, ready to be used when invoking require() function
 </script>
 
 
