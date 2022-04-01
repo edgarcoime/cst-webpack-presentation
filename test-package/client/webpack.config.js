@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -9,6 +10,12 @@ module.exports = {
     filename: "index.js",
     clean: true,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "My first generated html!",
+      template: "./src/index.html",
+    }),
+  ],
   experiments: {
     asyncWebAssembly: true,
   }
